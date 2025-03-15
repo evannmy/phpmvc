@@ -60,8 +60,8 @@
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
-            <label for="numberPhone" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" id="numberPhone" name="numberPhone" required>
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
           </div>
         </div>
         <div class="modal-footer">

@@ -7,7 +7,7 @@ $(function() {
     $('form #id').val('');
     $('form #name').val('');
     $('form #email').val('');
-    $('form #numberPhone').val('');
+    $('form #phoneNumber').val('');
   });
 
   $('.update-button').on('click', function() {
@@ -28,7 +28,7 @@ $(function() {
         $('form #id').val(contact['id']);
         $('form #name').val(contact['name']);
         $('form #email').val(contact['email']);
-        $('form #numberPhone').val(contact['number_phone']);
+        $('form #phoneNumber').val(contact['phone_number']);
       }
     });
   });

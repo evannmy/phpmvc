@@ -21,12 +21,12 @@ class Contacts_model {
   function addContact($data) {
     $name = $data['name'];
     $email = $data['email'];
-    $numberPhone = $data['numberPhone'];
+    $phoneNumber = $data['phoneNumber'];
 
-    $this->db->dbQuery('INSERT INTO contacts VALUES(default, :name, :email, :numberPhone)');
+    $this->db->dbQuery('INSERT INTO contacts VALUES(default, :name, :email, :phoneNumber)');
     $this->db->bind(':name', $name);
     $this->db->bind(':email', $email);
-    $this->db->bind(':numberPhone', $numberPhone);
+    $this->db->bind(':phoneNumber', $phoneNumber);
     $this->db->execute();
 
     return $this->db->rowCount();
@@ -44,12 +44,12 @@ class Contacts_model {
     $id = $_POST['id'];
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $numberPhone = $_POST['numberPhone'];
+    $phoneNumber = $_POST['phoneNumber'];
 
-    $this->db->dbQuery('UPDATE contacts SET name=:name, email=:email, number_phone=:numberPhone WHERE id=:id');
+    $this->db->dbQuery('UPDATE contacts SET name=:name, email=:email, phone_number=:phoneNumber WHERE id=:id');
     $this->db->bind(':name', $name);
     $this->db->bind(':email', $email);
-    $this->db->bind(':numberPhone', $numberPhone);
+    $this->db->bind(':phoneNumber', $phoneNumber);
     $this->db->bind(':id', $id);
     $this->db->execute();
 
